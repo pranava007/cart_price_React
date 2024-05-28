@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: royalblue !important ; 
+}
+.box1 p {
+  margin-top: 30px ;
+  margin-bottom: 10px;
+  /* margin-left: 35px; */
+}
+
+.box1 {
+  border: 2px solid white;
+  width: 400px;
+
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  height: 700px;
+}
+.free,
+h1 {
+  text-align: center;
+}
+
+.box1 button {
+  background-color: royalblue;
+  border: none;
+  /* margin-left: 30px; */
+  height: 40px;
+  border-radius: 30px;
+  color: white;
+  width: 340px;
+  position: relative;
+  left: 0px;
+}
+.disable {
+  opacity: 0.5;
+}
