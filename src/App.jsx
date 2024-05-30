@@ -1,31 +1,81 @@
+
 import './App.css'
-import Pro from './Components/Pro'
-import Puls from './Components/Puls'
-import Free from './Components/Free'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import Cartprice from './Components/Cartprice'
+Cartprice
 
 function App() {
  
+  let data = [
+    {
+    title:"FREE",
+    price:"$0/month",
+    user:"Single User",
+    storge:"50GB Storage",
+    project:"Unlimited Public Projects",
+    Community:"Community Access",
+    privateproject:"Unlimited Private Project",
+    support:"Dedicated Phone Support",
+    subdomin:"Free Subdomain",
+    Reports:"Monthly Staus Reports",
+    booluser:true,
+    boolstorge:true,
+    boolproject:true,
+    boolCommunity:true,
+    boolprivate:false,
+    boolsupport:false,
+    boolsubdomin:false,
+    boolReports:false,
+    boolbtn:false
+    
+  },
+  {
+    title:"PLUS",
+    price:"$9/month",
+    user:"5 User",
+    storge:"50GB Storage",
+    project:"Unlimited Public Projects",
+    Community:"Community Access",
+    privateproject:"Unlimited Private Project",
+    support:"Dedicated Phone Support",
+    subdomin:"Free Subdomain",
+    Reports:"Monthly Staus Reports",
+    booluser:true,
+    boolstorge:true,
+    boolproject:true,
+    boolCommunity:true,
+    boolprivate:true,
+    boolsupport:true,
+    boolsubdomin:true,
+    boolReports:false,
+    boolbtn:false
+  },
+  {
+    title:"PRO",
+    price:"$49/month",
+    user:"Single User",
+    storge:"50GB Storage",
+    project:"Unlimited Public Projects",
+    Community:"Community Access",
+    privateproject:"Unlimited Private Project",
+    support:"Dedicated Phone Support",
+    subdomin:"Free Subdomain",
+    Reports:"Monthly Staus Reports",
+    booluser:true,
+    boolstorge:true,
+    boolproject:true,
+    boolCommunity:true,
+    boolprivate:true,
+    boolsupport:true,
+    boolsubdomin:true,
+    boolReports:true,
+    boolbtn:true,
+  }
+]
 
   return (
-    <>
-    <Container>
-      <Row>
-        <Col><Free/></Col>
-        <Col><Puls/></Col>
-        <Col> <Pro/></Col>
-      </Row>
-    </Container>
-   
-   
-     
-
-    </>
+      <>
+      <Cartprice data={data}/>
+      </>
   )
 }
 
