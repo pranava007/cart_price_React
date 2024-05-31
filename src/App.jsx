@@ -17,7 +17,7 @@ function App() {
     support:"Dedicated Phone Support",
     subdomin:"Free Subdomain",
     Reports:"Monthly Staus Reports",
-    booluser:true,
+    booluser:false,
     boolstorge:true,
     boolproject:true,
     boolCommunity:true,
@@ -52,7 +52,7 @@ function App() {
   {
     title:"PRO",
     price:"$49/month",
-    user:"Single User",
+    user:"Ultimate User",
     storge:"50GB Storage",
     project:"Unlimited Public Projects",
     Community:"Community Access",

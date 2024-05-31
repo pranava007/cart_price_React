@@ -23,14 +23,14 @@ function Cartprice({ data }) {
             </div>
 
             <hr />
-            <p >{info.booluser?crt:wrong}{info.user}</p>
-            <p>{info.boolstorge?crt:wrong}{info.storge} </p>
-            <p>{info.boolproject?crt:wrong}{info.project} </p>
-            <p>{info.boolCommunity?crt:wrong}{info.Community} </p>
-            <p>{info.boolprivate?crt:wrong}{info.privateproject} </p>
-            <p>{info.boolsupport?crt:wrong}{info.support} </p>
-            <p>{info.boolsubdomin?crt:wrong}{info.subdomin}</p>
-            <p >{info.boolReports?crt:wrong}{info.Reports} </p>
+            {info.booluser?<p>{crt}{info.user}</p>: <p className="disable">{wrong}{info.user}</p>}
+            {info.boolstorge?<p>{crt}{info.storge}</p>: <p className="disable">{wrong}{info.storge}</p>}          
+            {info.boolproject?<p>{crt}{info.project}</p>: <p className="disable">{wrong}{info.project}</p>}  
+            {info.boolCommunity?<p>{crt}{info.Community}</p>: <p className="disable">{wrong}{info.Community}</p>}          
+            {info.boolprivate?<p>{crt}{info.privateproject}</p>: <p className="disable">{wrong}{info.privateproject}</p>}
+            {info.boolsupport?<p>{crt}{info.support}</p>: <p className="disable">{wrong}{info.support}</p>}
+            {info.boolsubdomin?<p>{crt}{info.subdomin}</p>: <p className="disable">{wrong}{info.subdomin}</p>}
+            {info.boolReports?<p>{crt}{info.Reports}</p>: <p className="disable">{wrong}{info.Reports}</p>}
             {info.boolbtn? <div className="btn" >
               <button type="button">Button</button>
             </div>: <div className="btn disable" >
